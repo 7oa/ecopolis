@@ -1,0 +1,15 @@
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  background-color: $c-green-l;
+  color: $white;
+  font-size: 20px;
+  line-height: 70px;
+  padding: 0 40px;
+  font-family: SegoeUILight;
+  text-transform: uppercase;
+  &:hover{
+	background: rgb(96, 191, 112);
+	background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
+  }
+}

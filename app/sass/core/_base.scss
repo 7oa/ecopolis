@@ -21,6 +21,40 @@ textarea{
   resize: vertical;
 }
 .container{
-  width: 1260px;
+  width: 100%;
+  max-width: $w-max;
+  min-width: $w-min;
   margin: 0 auto;
+}
+.line{
+  height: 5px;
+  background: rgb(96, 191, 112);
+  background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
+}
+.logo{
+  @include bg-img(cover);
+  display: block;
+  background-image: url(images/logo.svg);
+  width: 170px;
+  height: 44px;
+  &_white{
+	background-image: url(images/logo.png);
+	width: 320px;
+	height: 80px;
+  }
+}
+.ttl{
+  display: inline-block;
+  font-size: 60px;
+  font-family: CodeProBoldLC;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  &:after{
+	content:"";
+	height: 4px;
+	width: 100%;
+	display: block;
+	background: rgb(96, 191, 112);
+	background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
+  }
 }

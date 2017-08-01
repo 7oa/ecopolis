@@ -1,13 +1,72 @@
 extends core/_template
 
 append sharedVars
-	- var activeMenu = 'Главная';
+    - var activeMenu = 'Главная';
 
 block title
-	title Главная
+    title Главная
 
 block content
-	//workarea
-	.workarea workarea
+    //workarea
+    .workarea
+        .index-b1
+            .main-img(style="background-image: url('images/TEMP/chain-bridge-111329_1920.jpg')")
+                .index-b1__ttl Экополис
+                .index-b1__prev Зелёная экономика по зелёным документам
+                a.index-b1__btn.btn(href="#") Узнать подробнее
 
-	//end workarea
+        .index-b2 Мы
+
+        .index-b3 У НАС
+
+        .index-b4
+            .ttl Услуги
+            .service
+                .row
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Экологическое проектирование
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/water-1246643_1920.jpg')") Оценка хозяйственной деятельности предприятия на окружающую среду
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/stock-photo-panoramic-skyline-and-buildings-with-empty-concrete-square-floor-681654031.jpg')") Экологический учет и отчетность предпиятии сопровождение текущей экологической деятельности
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/sky-746378_1920.jpg')") Консультация и обслуживание предприятий и организаций
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
+                    .col-xs-4
+                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
+            .btn.index-b4__btn Больше услуг
+        .index-b5
+            .ttl Новости
+            .news-prev
+                .row
+                    .col-xs-6
+                        .news-prev__item
+                            .news-prev__img
+                                .news-prev__ttl
+                            .news-prev__text
+                                .news-prev__date
+                                .news-prev__prev
+                    .col-xs-3
+                        .news-prev__item
+                            .news-prev__img
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
+                    .col-xs-3
+                        .news-prev__item sdf
+                    .col-xs-3
+                        .news-prev__item sdf
+                    .col-xs-3
+                        .news-prev__item sdf
+                    .col-xs-3
+                        .news-prev__item sdf
+            .index-b5__btn
+                .btn Все новости
+
+        .index-b6 Оставить заявку
+
+        .index-b7 Наши партнеры
+
+    //end workarea

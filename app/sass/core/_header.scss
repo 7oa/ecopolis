@@ -1,5 +1,72 @@
 .header {
-    background: $white;
-    height: 100px;
-    background: cadetblue;
+  background: $white;
+  &__wrapper{
+	display: flex;
+	height: 122px;
+	box-sizing: border-box;
+	padding-top: 42px;
+	padding-right: 30px;
+	padding-left: 30px;
+  }
+  &__logo{
+	padding-right: 76px;
+	padding-left: 30px;
+	width: 170px;
+	flex: 0 0 auto;
+  }
+  &__menu{
+	padding-top: 11px;
+	flex: 1 1 auto;
+  }
+}
+.header-menu{
+  &__items{
+	display: inline-block;
+	margin-right: 52px;
+  }
+  &__links{
+	font-size: 23px;
+	line-height: 23px;
+	font-family: SegoeUILight;
+	letter-spacing: 0.1em;
+	color: $c-f;
+	transition: .5s;
+
+	&_active,
+	&:hover{
+		color: $c-green-l;
+	}
+  }
+}
+.search{
+  &__wrapper{
+	border: 1px solid $c-green-l;
+	position: relative;
+	height: 51px;
+	width: 339px;
+	box-sizing: border-box;
+  }
+  &__input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	padding-left: 60px;
+	border: 0;
+  }
+  &__submit{
+	@include bg-img(contain);
+	position: absolute;
+	left: 16px;
+	top: 8px;
+	background-color: transparent;
+	border: none;
+	width: 41px;
+	height: 35px;
+	background-image: url('images/search.svg');
+	cursor: pointer;
+  }
 }

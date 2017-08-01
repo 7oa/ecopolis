@@ -1,0 +1,70 @@
+.index-b1{
+  margin-bottom: 125px;
+  padding: 10px;
+  background: rgb(96, 191, 112);
+  background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
+  text-align: center;
+  color: $white;
+  &__ttl{
+	padding-top: 200px;
+	font-size: 145px;
+	font-family: OpenSans;
+	text-transform: uppercase;
+	margin-bottom: 150px;
+  }
+  &__prev{
+	font-family: Tinos;
+	font-size: 45px;
+	margin-bottom: 150px;
+  }
+  &__btn{
+
+  }
+}
+.main-img{
+  @include bg-img(cover);
+  height: 935px;
+  width: 100%;
+}
+.index-b4{
+  overflow: hidden;
+  margin-bottom: 50px;
+  &__btn{
+	float: right;
+  }
+}
+.service{
+  margin: 0 -10px 30px;
+  &__item{
+	@include bg-img(cover);
+	height: 360px;
+	box-sizing: border-box;
+	padding: 0 10%;
+	margin: 0 10px 10px;
+	color: $white;
+	font-family: SegoeUILight;
+	font-size: 25px;
+	line-height: 28px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+}
+.index-b5{
+  background-color: #ccc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+  &__btn{
+	text-align: center;
+  }
+}
+.news-prev{
+  margin: 0 -10px 30px;
+  &__item{
+	background-color: $white;
+	margin: 0 10px 10px;
+	height: 300px;
+  }
+}
