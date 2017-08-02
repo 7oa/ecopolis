@@ -48,13 +48,63 @@ textarea{
   font-size: 60px;
   font-family: CodeProBoldLC;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
+  margin-left: 125px;
   &:after{
 	content:"";
+	margin-top: 20px;
 	height: 4px;
 	width: 100%;
 	display: block;
 	background: rgb(96, 191, 112);
 	background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
   }
+}
+.ttl-noborder {
+  display: inline-block;
+  font-size: 60px;
+  font-family: CodeProBoldLC;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  margin-left: 125px;
+}
+.green-prev{
+  color: $c-green-l;
+  font-size: 20px;
+  font-family: CodeProLC;
+  margin-left: 125px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  &:before{
+	content:"";
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background-color: $c-green-l;
+	margin-right: 15px;
+  }
+}
+#top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  width: 75px;
+  height: 75px;
+  background-image: url(images/totop.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  opacity: 1;
+  transition: opacity .5s;
+  &:hover{
+	opacity: .5;
+  }
+}
+.hidden{
+  opacity:0;
+}
+.visible{
+  opacity:1;
 }

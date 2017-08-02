@@ -10,63 +10,172 @@ block content
     //workarea
     .workarea
         .index-b1
-            .main-img(style="background-image: url('images/TEMP/chain-bridge-111329_1920.jpg')")
-                .index-b1__ttl Экополис
-                .index-b1__prev Зелёная экономика по зелёным документам
-                a.index-b1__btn.btn(href="#") Узнать подробнее
+            .index-swiper
+                .swiper-wrapper
+                    .swiper-slide
+                        .main-img(style="background-image: url('images/TEMP/chain-bridge-111329_1920.jpg')")
+                            .index-b1__ttl.js-show_up Экополис
+                            .index-b1__prev.js-show_up Зелёная экономика по зелёным документам
+                            a.index-b1__btn.btn.js-show_up(href="#") Узнать подробнее
+                    .swiper-slide
+                        .main-img(style="background-image: url('images/TEMP/sky-746378_1920.jpg')")
+                            .index-b1__ttl Экополис
+                            .index-b1__prev Зелёная экономика по зелёным документам
+                            a.index-b1__btn.btn(href="#") Узнать подробнее
+                .index-swiper-pagination
 
-        .index-b2 Мы
+        .index-b2
+            .row
+                .col-xs-6
+                    .we-wrapper
+                        .ttl-noborder.js-show_left Мы
+                        .green-prev.js-show_left строим зеленое будущее
+                        .we
+                            .row
+                                .col-xs-6
+                                    .we__item.js-show_up
+                                        .we__img(style="background-image: url('images/clipboard.svg')")
+                                        .we__text Экологический аудит и аутсорсинг
+                                .col-xs-6
+                                    .we__item.js-show_up
+                                        .we__img(style="background-image: url('images/file.svg')")
+                                        .we__text Разработка документации в области охраны
+                            .row
+                                .col-xs-6
+                                    .we__item.js-show_up
+                                        .we__img(style="background-image: url('images/team.svg')")
+                                        .we__text Подготовка кадров по природоохранной
+                                .col-xs-6
+                                    .we__item.js-show_up
+                                        .we__img(style="background-image: url('images/compact-disc.svg')")
+                                        .we__text Постановка и<br>сопровождение
+                .col-xs-6
+                    .we-img.js-show_right(style="background-image: url('images/TEMP/beard-2286440_1920.jpg')")
 
-        .index-b3 У НАС
+
+
+        .index-b3
+            .about-us
+                .row
+                    .col-xs-4
+                        .about-us__item(style="background-image:url('images/TEMP/stock-photo-panoramic-skyline-and-buildings-with-empty-concrete-square-floor-681654031.jpg')")
+                            .about-us__inner
+                                .about-us__ttl.js-show_up У нас
+                                .about-us__text.js-show_up
+                                    .about-us__text_f
+                                        span.about-us__xxl 14
+                                        span.about-us__l лет<br>опыта
+                    .col-xs-4
+                        .about-us__item(style="background-image:url('images/TEMP/stock-photo-business-people-showing-team-work-while-working-in-board-room-in-office-interior-people-helping-530749768.jpg')")
+                            .about-us__inner
+                                .about-us__ttl.js-show_up Работники
+                                .about-us__text.js-show_up
+                                    span.about-us__m Квалифицированные<br>
+                                    span.about-us__s специалисты своего дела
+                    .col-xs-4
+                        .about-us__item(style="background-image:url('images/TEMP/stock-photo-businessman-handshaking-in-office-teamwork-cooperation-agreement-acquisition-concept-seen-520457383.jpg')")
+                            .about-us__inner
+                                .about-us__ttl.js-show_up Сотрудничество
+                                .about-us__text.js-show_up
+                                    span.about-us__m С большинством<br>
+                                    span.about-us__s орагнизация<br>Архангельской области
 
         .index-b4
-            .ttl Услуги
+            .ttl.js-show_left Услуги
             .service
                 .row
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Экологическое проектирование
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Экологическое проектирование
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/water-1246643_1920.jpg')") Оценка хозяйственной деятельности предприятия на окружающую среду
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/water-1246643_1920.jpg')") Оценка хозяйственной деятельности предприятия на окружающую среду
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/stock-photo-panoramic-skyline-and-buildings-with-empty-concrete-square-floor-681654031.jpg')") Экологический учет и отчетность предпиятии сопровождение текущей экологической деятельности
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/stock-photo-panoramic-skyline-and-buildings-with-empty-concrete-square-floor-681654031.jpg')") Экологический учет и отчетность предпиятии сопровождение текущей экологической деятельности
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/sky-746378_1920.jpg')") Консультация и обслуживание предприятий и организаций
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/sky-746378_1920.jpg')") Консультация и обслуживание предприятий и организаций
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
                     .col-xs-4
-                        a.service__item(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
-            .btn.index-b4__btn Больше услуг
+                        a.service__item.js-show_up(href="#" style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')") Консультация и обслуживание предприятий и организаций
+            .btn.index-b4__btn.js-show_right Больше услуг
         .index-b5
-            .ttl Новости
+            .ttl.js-show_left Новости
             .news-prev
                 .row
                     .col-xs-6
-                        .news-prev__item
-                            .news-prev__img
-                                .news-prev__ttl
-                            .news-prev__text
-                                .news-prev__date
-                                .news-prev__prev
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img.news-prev__img_big(style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')")
+                                .news-prev__ttl.news-prev__ttl_big ГРОМКИЙ ЗАГОЛОВОК
+                            .news-prev__text.news-prev__text_big
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Информативный текст. Действительно очень Информативный текст. Действительно очень
                     .col-xs-3
-                        .news-prev__item
-                            .news-prev__img
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/solar-panel-array-1794485_1280.jpg')")
                             .news-prev__text
                                 .news-prev__ttl Заголовок
                                 .news-prev__date 11.11.2017
                                 .news-prev__prev Консультация и обслуживание предприятий и организаций
                     .col-xs-3
-                        .news-prev__item sdf
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/startup-593304_1920.jpg')")
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
                     .col-xs-3
-                        .news-prev__item sdf
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/stock-photo-businessman-handshaking-in-office-teamwork-cooperation-agreement-acquisition-concept-seen-520457383.jpg')")
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
                     .col-xs-3
-                        .news-prev__item sdf
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')")
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
                     .col-xs-3
-                        .news-prev__item sdf
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')")
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
+                    .col-xs-3
+                        a.news-prev__item.js-show_up(href="#")
+                            .news-prev__img(style="background-image:url('images/TEMP/wind-energy-1220578-1599x1064.jpg')")
+                            .news-prev__text
+                                .news-prev__ttl Заголовок
+                                .news-prev__date 11.11.2017
+                                .news-prev__prev Консультация и обслуживание предприятий и организаций
             .index-b5__btn
-                .btn Все новости
+                .btn.js-show_up Все новости
 
-        .index-b6 Оставить заявку
+        .index-b6
+            .ttl-noborder.js-show_left Оставить заявку
+            .green-prev Наш менеджер свяжестя с вами<br>в течении 5 рабочих дней.
 
-        .index-b7 Наши партнеры
+        .index-b7
+            .ttl.js-show_left Наши партнеры
+            .partners
+                .row
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://vignette1.wikia.nocookie.net/logopedia/images/b/b8/Levi%27s_logo.png/revision/latest?cb=20130505012656')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://pmcdeadline2.files.wordpress.com/2016/07/logo-tv-logo.png')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://vignette2.wikia.nocookie.net/gtawiki/images/9/9a/PlayStation_1_Logo.png/revision/latest?cb=20100130082645&format=original')")
+                    .col-xs-3
+                        .partners__item.js-show_up(style="background-image:url('https://s-media-cache-ak0.pinimg.com/736x/33/b8/69/33b869f90619e81763dbf1fccc896d8d--lion-logo-modern-logo.jpg')")
 
     //end workarea

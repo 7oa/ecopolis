@@ -1,15 +1,16 @@
 header.header
-    .container
-        .header__wrapper
-            .header__logo
-                a.logo(href="/")
-            .header__menu
-                ul.header-menu
-                    each i in nav
-                        +navItem(i.url, i.name, i.url = activeMenu)
-            .header_search
-                form.search
-                    .search__wrapper
-                        input.search__input(type="search" name="q")
-                        input.search__submit(type="submit" value="")
-    .line
+    .header__inner
+        .container
+            .header__wrapper
+                .header__logo
+                    a.logo(href="/")
+                .header__menu
+                    ul.header-menu
+                        each i in nav
+                            +navItem(i.url, i.name, i.url = activeMenu)
+                .header_search
+                    form.search
+                        .search__wrapper
+                            input.search__input(type="search" name="q")
+                            input.search__submit(type="submit" value="")
+        .line

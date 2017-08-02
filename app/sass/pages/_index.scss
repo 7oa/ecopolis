@@ -1,5 +1,4 @@
 .index-b1{
-  margin-bottom: 125px;
   padding: 10px;
   background: rgb(96, 191, 112);
   background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
@@ -31,6 +30,7 @@
   margin-bottom: 50px;
   &__btn{
 	float: right;
+	margin-right: 115px;
   }
 }
 .service{
@@ -49,12 +49,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
   }
 }
 .index-b5{
-  background-color: #ccc;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  background: rgba(96, 191, 112, 0.15);
+  background: linear-gradient(270deg, rgba(96, 191, 112, 0.15) 0%, rgba(176, 227, 107, 0.15) 100%);
+  padding-top: 150px;
+  padding-bottom: 50px;
   overflow: hidden;
   &__btn{
 	text-align: center;
@@ -63,8 +65,194 @@
 .news-prev{
   margin: 0 -10px 30px;
   &__item{
-	background-color: $white;
-	margin: 0 10px 10px;
-	height: 300px;
+	display: block;
+	background: $white;
+	margin: 0 10px 20px;
+	height: 675px;
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
+  }
+  &__img{
+	@include bg-img(cover);
+	height: 410px;
+	position: relative;
+
+	&_big{
+	  height: 510px;
+	}
+  }
+  &__ttl{
+	font-family: CodeProBoldLC;
+	font-size: 24px;
+	color: $c-b41;
+	margin-bottom: 20px;
+	&_big{
+	  font-size: 50px;
+	  color: $white;
+	  position: absolute;
+	  bottom: 45px;
+	  left:	50px;
+	  margin-bottom: 0;
+	}
+  }
+  &__text{
+	padding: 20px;
+	box-sizing: border-box;
+	&_big{
+	  padding: 20px 50px;
+	}
+  }
+  &__date{
+	color: $c-b9;
+	font-family: SegoeUI;
+	margin-bottom: 20px;
+  }
+  &__prev{
+	color: $c-4a;
+	font-size: 20px;
+	line-height: 24px;
+	font-family: Tinos;
+  }
+}
+.index-b3{
+  margin-bottom: 130px;
+  overflow: hidden;
+}
+.about-us{
+  &__item{
+	@include bg-img(cover);
+	height: 1070px;
+	color: $white;
+	padding-top: 325px;
+	box-sizing: border-box;
+  }
+  &__inner{
+	width: 500px;
+	margin: 0 auto;
+  }
+  &__ttl{
+	font-size: 53px;
+	font-family: CodeProBoldLC;
+	margin-bottom: 75px;
+  }
+  &__text{
+
+	&_f{
+		display: flex;
+		align-items: center;
+	}
+
+	&:before,
+	&:after{
+	  content: '';
+	  display: block;
+	  width: 65px;
+	  height: 2px;
+	  background-color: $white;
+	}
+	&:before{
+	  margin-bottom: 80px;
+	}
+	&:after{
+	  margin-top: 80px;
+	}
+  }
+  &__xxl{
+	font-size: 159px;
+	font-family: CodeProLC;
+	margin-right: 10px;
+  }
+  &__l{
+	font-size: 58px;
+	font-family: CodeProLC;
+  }
+  &__m{
+	font-size: 46px;
+	font-family: CodeProLC;
+	line-height: 50px;
+  }
+  &__s{
+	font-size: 36px;
+	font-family: CodeProLC;
+	line-height: 40px;
+  }
+}
+.index-b2{
+  padding-top: 125px;
+  padding-bottom: 80px;
+  background-color: $c-f5;
+}
+.we-wrapper{
+  padding-top: 80px;
+}
+.we{
+  /*display: flex;
+  flex-wrap: wrap;*/
+  max-width: 720px;
+  margin: 70px auto 0px;
+
+  &__item{
+	height: 250px;
+	//width: 280px;
+	//width: 100%;
+	margin: 0 40px 40px;
+	border: 1px solid $c-border;
+	box-sizing: border-box;
+	text-align: center;
+	padding: 10px;
+  }
+  &__img{
+	@include bg-img(contain);
+	width: 70px;
+	height: 60px;
+	margin: 0 auto 20px;
+  }
+  &__text{
+	color: $c-b26;
+	font-size: 20px;
+	font-family: Tinos;
+  }
+}
+.we-img{
+  @include bg-img(cover);
+  height: 840px;
+  width: 100%;
+}
+
+.index-b7{
+  background-color: $c-f5;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.partners{
+  max-width: 1400px;
+  margin: 40px auto 0;
+
+  &__item{
+	@include bg-img(contain);
+	height: 140px;
+	margin-bottom: 40px;
+  }
+}
+
+.index-b6{
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.index-swiper{
+  overflow: hidden;
+  position: relative;
+}
+.index-swiper-pagination{
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  .swiper-pagination-bullet-active{
+	background: $c-green-l;
+  }
+  .swiper-pagination-bullet{
+	width: 10px;
+	height: 10px;
   }
 }
