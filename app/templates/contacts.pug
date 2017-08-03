@@ -1,0 +1,143 @@
+extends core/_template
+
+append sharedVars
+    - var activeMenu = 'Контакты';
+
+block title
+    title Контакты
+
+block content
+    //workarea
+    .workarea
+        .inner-page.contacts-page
+            .ttl Контакты
+            .map-wrapper
+                .map
+                    #map
+                    //map script
+                    include blocks/_map
+                    //end map script
+                .line
+            //end .map
+            .con-com
+                .row
+                    .col-xs-4
+                        .con-com__item
+                            .con-com__ttl Адрес
+                            .con-com__data.con-com__data_address 163000, г. Архангельск, пр. Троицкий 106, строение 1
+                    .col-xs-4
+                        .con-com__item
+                            .con-com__ttl Телефон
+                            .con-com__data.con-com__data_tel 8 (8182) 208-589, 214-335
+                    .col-xs-4
+                        .con-com__item.con-com__item_mail
+                            .con-com__ttl.con-com__data_mail Электронная почта
+                            .con-com__data
+                                a(href="mailto:mail@mail.ru") mail@mail.ru
+            //end .con-com
+            .con-main
+                .row
+                    .col-xs-6
+                        .white-pers
+                            .pers-fio
+                                .pers-f Загинайченок
+                                .pers-io Ульяна Анатольевна
+                                .pers-dlz Исполнительный директор
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .pers-ur
+                            .pers-ur__ttl ИНН
+                            .pers-ur__val 290101001
+                            .pers-ur__ttl КПП
+                            .pers-ur__val 290101001
+                            .pers-ur__ttl ОГРН
+                            .pers-ur__val 290101001 (свидетельство серии 29 №000959603)
+            //end .con-main
+            .con-all
+                .row
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f МЕШЕРКИНА
+                                .pers-io Анна Николаевна
+                                .pers-dlz Начальник отдела экологической и промышленной безопасности
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f КРЫЛОВА
+                                .pers-io Елена Михайловна
+                                .pers-dlz Главный специалист отдела экологической и промышленной безопасности
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f ПРУЦАКОВА
+                                .pers-io Юлия Анатольевна
+                                .pers-dlz Начальник отдела нормирования в области обращения с отходами
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f НЕКРАСОВ
+                                .pers-io Сергей Юрьевич
+                                .pers-dlz Ведущий специалист отдела экологической и промышленной безопасности
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f Загинайченок
+                                .pers-io Ульяна Анатольевна
+                                .pers-dlz Исполнительный директор
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f Загинайченок
+                                .pers-io Ульяна Анатольевна
+                                .pers-dlz Исполнительный директор
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f Загинайченок
+                                .pers-io Ульяна Анатольевна
+                                .pers-dlz Исполнительный директор
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+                    .col-xs-6
+                        .con-all__item
+                            .pers-fio
+                                .pers-f Загинайченок
+                                .pers-io Ульяна Анатольевна
+                                .pers-dlz Исполнительный директор
+                            .pers-contacts
+                                .pres-tel 8-921-085-18-18
+                                .pres-mail
+                                    a(href="mailto:mail@mail.ru") mail@mail.ru
+            //end .con-all
+        //end .contacts-page
+    //end workarea

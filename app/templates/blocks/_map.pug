@@ -3,15 +3,12 @@ script.
     ymaps.ready(init);
     function init () {
         var map = new ymaps.Map("map", {
-            center: [64.5422580573521,40.567459999999954],
+            center: [64.5452575573273,40.51837599999999],
             zoom: 17
         });
-        var placemark = new ymaps.Placemark([64.54225574861084,40.56746536441798], {
-            balloonContent: '163 000, Росcия, г.Архангельск, ул.Тимме, д.3',
+        var placemark = new ymaps.Placemark([64.5452575573273,40.51837599999999], {
+            balloonContent: '163 000, Росcия, г.Архангельск, пр.Троицкий 106, строение 1',
         }, {
-            iconImageHref: 'images/balloon.png',
-            iconImageSize: [182, 182],
-            iconImageOffset: [-118,-110]
         });
         map.geoObjects.add(placemark);
     }

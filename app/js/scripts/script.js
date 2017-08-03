@@ -27,6 +27,13 @@ $(document).ready(function() {
 	//end слайдер на главной
 
 	//плавное появление
+	if($('.js-show_fadeIn').length>0){
+		$('.js-show_fadeIn').addClass("hidden").viewportChecker({
+			classToAdd: 'visible animated fadeIn',
+			classToRemove: 'hidden',
+			offset: 100
+		});
+	}
 	if($('.js-show_up').length>0){
 		$('.js-show_up').addClass("hidden").viewportChecker({
 			classToAdd: 'visible animated fadeInUp',
@@ -49,4 +56,26 @@ $(document).ready(function() {
 		});
 	}
 	//end плавное появление
+
+	//search show
+	$(".js-search-show").click(function(){
+		$(this).parent().toggleClass("search__wrapper_open");
+	});
+	//end search show
+
+	$(".js-select").click(function(){
+		$(this).parent().toggleClass("open")
+			.children(".select-ul").slideToggle();
+	});
+
+	$(".js-opt").click(function(){
+		$(this).toggleClass("selected");
+
+		var option_all = $(".select-ul .selected").map(function () {
+			return $(this).text();
+		}).get().join('\n');
+
+		$('.select input').val(option_all);
+	});
+
 });
