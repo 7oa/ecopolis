@@ -6,7 +6,7 @@
 	width:100%;
 	background: $white;
 	position: fixed;
-	z-index: 9999;
+	z-index: 9;
   }
   &__wrapper{
 	display: flex;
@@ -17,8 +17,8 @@
 	padding-left: 30px;
   }
   &__logo{
-	padding-right: 76px;
-	padding-left: 30px;
+	padding-right: 3.8em;
+	padding-left: 1.5em;
 	width: 170px;
 	flex: 0 0 auto;
   }
@@ -30,11 +30,11 @@
 .header-menu{
   &__items{
 	display: inline-block;
-	margin-right: 52px;
+	margin-right: 2.6em;
   }
   &__links{
-	font-size: 23px;
-	line-height: 23px;
+	font-size: 1.150em;
+	line-height: 1em;
 	font-family: SegoeUILight;
 	letter-spacing: 0.1em;
 	color: $c-f;

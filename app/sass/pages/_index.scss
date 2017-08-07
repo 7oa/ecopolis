@@ -6,14 +6,14 @@
   color: $white;
   &__ttl{
 	padding-top: 200px;
-	font-size: 145px;
+	font-size: 7.250em;
 	font-family: OpenSans;
 	text-transform: uppercase;
 	margin-bottom: 150px;
   }
   &__prev{
 	font-family: Tinos;
-	font-size: 45px;
+	font-size: 2.250em;
 	margin-bottom: 150px;
   }
   &__btn{
@@ -56,6 +56,22 @@
 	  opacity: 1;
 	}
 
+	&:before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0,0,0,0.2);
+	}
+
+  }
+  &__ttl{
+	position: relative;
+	text-shadow: 0 0 10px rgba(0,0,0,.8);
   }
   &__more{
 	width: 100%;
@@ -89,6 +105,7 @@
 	  animation-delay: .4s;
 	}
   }
+
 }
 .index-b5{
   background: rgba(96, 191, 112, 0.15);
@@ -130,6 +147,7 @@
 	  bottom: 45px;
 	  left:	50px;
 	  margin-bottom: 0;
+	  text-shadow: 0 0 10px rgba(0,0,0,.5);
 	}
   }
   &__text{
@@ -174,13 +192,26 @@
 	color: $white;
 	padding-top: 325px;
 	box-sizing: border-box;
+	text-shadow: 0 0 10px rgba(0,0,0,.5);
+	position: relative;
+	&:before{
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100%;
+	  background-color: rgba(0,0,0,0.2);
+	}
   }
   &__inner{
 	width: 500px;
 	margin: 0 auto;
   }
   &__ttl{
-	font-size: 53px;
+	font-size: 2.650em;
 	font-family: CodeProBoldLC;
 	margin-bottom: 75px;
   }
@@ -198,6 +229,7 @@
 	  width: 65px;
 	  height: 2px;
 	  background-color: $white;
+	  opacity: .6;
 	}
 	&:before{
 	  margin-bottom: 80px;
@@ -206,24 +238,27 @@
 	  margin-top: 80px;
 	}
   }
+  &__text-inner{
+	min-height: 200px;
+  }
   &__xxl{
-	font-size: 159px;
+	font-size: 7.950em;
 	font-family: CodeProLC;
 	margin-right: 10px;
   }
   &__l{
-	font-size: 58px;
+	font-size: 2.9em;
 	font-family: CodeProLC;
   }
   &__m{
-	font-size: 46px;
+	font-size: 2.3em;
 	font-family: CodeProLC;
-	line-height: 50px;
+	line-height: 2.5em;
   }
   &__s{
-	font-size: 36px;
+	font-size: 1.8em;
 	font-family: CodeProLC;
-	line-height: 40px;
+	line-height: 1.2em;
   }
 
   .col-xs-4{
@@ -304,7 +339,7 @@
   &__item{
 	@include bg-img(contain);
 	height: 140px;
-	margin-bottom: 40px;
+	margin: 40px;
   }
   .col-xs-3{
 	&:nth-child(2n) .partners__item{
@@ -446,22 +481,22 @@
   max-width: 1680px;
   margin: 0 auto 140px;
   &__item{
-	margin-right: 100px;
+	margin-right: 5em;
   }
   &__ttl{
-	font-size: 40px;
+	font-size: 2em;
 	font-family: SegoeUI;
 	color: $c-19;
-	padding-left: 50px;
+	padding-left: 1.3em;
 	margin-bottom: 30px;
   }
   &__data{
 	color: $c-4a;
-	font-size: 32px;
+	font-size: 1.6em;
 	font-family: RobotoLight;
-	line-height: 38px;
+	line-height: 1.4em;
 	position: relative;
-	padding-left: 50px;
+	padding-left: 1.6em;
 	a{
 	  color: $c-4a;
 	}
@@ -517,19 +552,19 @@
   min-width: 227px;
 }
 .pers-f{
-  font-size: 45px;
+  font-size: 2.250em;
   font-family: SegoeUI;
   font-weight: bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 .pers-io{
-  font-size: 35px;
+  font-size: 1.75em;
   font-family: SegoeUILight;
   &:after{
 	content: '';
 	display: block;
-	width: 280px;
+	width: 70%;
 	height: 2px;
 	background: rgb(96, 191, 112);
 	background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
@@ -538,31 +573,153 @@
   }
 }
 .pers-dlz{
-  font-size: 25px;
+  font-size: 1.25em;
   font-family: SegoeUI;
 }
 .pres-tel{
-  font-size: 35px;
+  font-size: 1.75em;
   font-family: SegoeUILight;
   margin-bottom: 30px;
 }
 .pres-mail{
   a{
-	font-size: 35px;
+	font-size: 1.75em;
 	font-family: SegoeUILight;
 	color: $c-19;
   }
 }
 .pers-ur{
-  margin-left: 50px;
+  margin-left: 2.5em;
   &__ttl{
-	font-size: 34px;
+	font-size: 1.7em;
 	font-family: SegoeUI;
 	margin-bottom: 16px;
   }
   &__val{
-	font-size: 28px;
+	font-size: 1.4em;
 	font-family: RobotoLight;
 	margin-bottom: 16px;
   }
+}
+.dc{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.top-img{
+  @include bg-img(cover);
+  height: 410px;
+  position: relative;
+  margin-bottom: 65px;
+  &__inner{
+	position: relative;
+	height: 100%;
+  }
+  &__ttl{
+	position: absolute;
+	left: 20px;
+	bottom: 75px;
+	font-family: CodeProBoldLC;
+	font-size: 2.75em;
+	line-height: 1.1em;
+	color: $white;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  &__back{
+	@include bg-img(contain);
+	background-image: url('images/back.svg');
+	width: 16px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 70px;
+  }
+}
+.detail-content{
+  font-family: Tinos;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-bottom:65px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  p{
+	margin-bottom: 25px;
+  }
+}
+.detail-slider{
+  background-color: $c-1a;
+  margin-bottom: 60px;
+  padding: 60px 0;
+  position: relative;
+  &__inner{
+	width: 100%;
+	max-width: 1400px;
+	margin: 0 auto;
+	overflow: hidden;
+  }
+  &__img{
+	@include bg-img(cover);
+	margin-right: 10%;
+	height: 545px;
+  }
+  &__text{
+  	color: $white;
+	padding: 50px 0;
+	border-top: 1px solid #949799;
+	border-bottom: 1px solid #949799;
+	position: relative;
+	height: 365px;
+	margin-top: 50px;
+  }
+  &__ttl{
+	font-family: SegoeUI;
+	font-style: italic;
+	font-size: 1.5em;
+  }
+}
+.detail-swiper-pagination{
+  color: $white;
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  font-family: SegoeUI;
+  font-style: italic;
+  color: #C4C8CB;
+}
+.detail-swiper-next,
+.detail-swiper-prev{
+  @include bg-img(contain);
+  position: absolute;
+  top: 40%;
+  width: 26px;
+  height: 50px;
+  background-image: url('images/back.svg');
+  z-index: 2;
+  cursor: pointer;
+  transition: opacity .5s;
+  &:hover{
+	opacity: .5;
+  }
+}
+.detail-swiper-next{
+  right: 2%;
+  transform: rotate(180deg);
+}
+.detail-swiper-prev{
+  left: 2%;
+}
+.detail-footer{
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__date{
+	font-family: SegoeUI;
+	font-style: italic;
+	font-size: 1em;
+  }
+}
+.service-req{
+  margin-bottom: 60px;
 }
