@@ -19,10 +19,15 @@ $(document).ready(function() {
 	var swiper = new Swiper('.index-swiper', {
 		pagination: '.index-swiper-pagination',
 		paginationClickable: true,
-		speed: 1000,
-		autoplay: 5500,
-		autoplayDisableOnInteraction: false,
-		loop: true
+		speed: 2000,
+		//autoplay: 20000,
+		//autoplayDisableOnInteraction: false,
+		//loop: true,
+		preventClicks: false,
+		preventClicksPropagation: false,
+		allowSwipeToPrev: false,
+		allowSwipeToNext: false
+
 	});
 	//end слайдер на главной
 

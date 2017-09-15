@@ -28,7 +28,7 @@ textarea{
 .container{
   width: 100%;
   max-width: $w-max;
-  min-width: $w-min;
+  //min-width: $w-min;
   margin: 0 auto;
 }
 .line{
@@ -64,6 +64,10 @@ textarea{
 	background: rgb(96, 191, 112);
 	background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
   }
+  @media(max-width: 1200px){
+	margin-left: 65px;
+	margin-bottom: 20px;
+  }
 }
 .ttl-noborder {
   display: inline-block;
@@ -72,6 +76,10 @@ textarea{
   text-transform: uppercase;
   margin-bottom: 45px;
   margin-left: 125px;
+  @media(max-width: 1200px){
+	margin-left: 65px;
+	margin-bottom: 20px;
+  }
 }
 .green-prev{
   color: $c-green-l;
@@ -88,6 +96,9 @@ textarea{
 	height: 2px;
 	background-color: $c-green-l;
 	margin-right: 15px;
+  }
+  @media(max-width: 1200px){
+	margin-left: 65px;
   }
 }
 #top {
@@ -112,4 +123,24 @@ textarea{
 }
 .visible{
   opacity:1;
+}
+.ya-share2__icon{
+  width: 40px !important;
+  height: 40px !important;
+}
+.detail-content{
+  ul li{
+	display: flex;
+	margin-bottom: 10px;
+	&:before{
+	  @include bg-img(contain);
+	  content:'';
+	  width: 20px;
+	  height: 20px;
+	  background-image: url('images/li.svg');
+	  flex: 0 0 auto;
+	  margin-right: 20px;
+	  margin-top: 5px;
+	}
+  }
 }

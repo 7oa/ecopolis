@@ -28,13 +28,14 @@
 	background-size: 13px;
 	margin-bottom: 44px;
 	padding-left: 36px;
+	background-position-y: center;
   }
   &__address{
 	background-image: url('images/pin.svg');
 	background-repeat: no-repeat;
 	background-size: 15px;
 	padding-left: 33px;
-	background-position-y: 12px;
+	background-position-y: center;
   }
   &__logo{
 	width: 320px;

@@ -4,17 +4,25 @@
   background: linear-gradient(270deg, rgb(96, 191, 112) 0%, rgb(176, 227, 107) 100%);
   text-align: center;
   color: $white;
+  overflow: hidden;
   &__ttl{
 	padding-top: 200px;
 	font-size: 7.250em;
 	font-family: OpenSans;
 	text-transform: uppercase;
 	margin-bottom: 150px;
+	@media(max-width: 1200px){
+	  padding-top: 100px;
+	  margin-bottom: 100px;
+	}
   }
   &__prev{
 	font-family: Tinos;
 	font-size: 2.250em;
 	margin-bottom: 150px;
+	@media(max-width: 1200px){
+	  margin-bottom: 100px;
+	}
   }
   &__btn{
 
@@ -24,6 +32,9 @@
   @include bg-img(cover);
   height: 935px;
   width: 100%;
+  @media(max-width: 1200px){
+	height: 620px;
+  }
 }
 .index-b4{
   overflow: hidden;
@@ -116,6 +127,9 @@
   &__btn{
 	text-align: center;
   }
+  @media(max-width: 1200px){
+	padding-top: 50px;
+  }
 }
 .news-prev{
   margin: 0 -10px 30px;
@@ -125,14 +139,23 @@
 	margin: 0 10px 20px;
 	height: 675px;
 	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.15);
+	@media(max-width: 1200px){
+	  height: 455px;
+	}
   }
   &__img{
 	@include bg-img(cover);
 	height: 410px;
 	position: relative;
+	@media(max-width: 1200px){
+	  height: 200px;
+	}
 
 	&_big{
 	  height: 510px;
+	  @media(max-width: 1200px){
+		height: 290px;
+	  }
 	}
   }
   &__ttl{
@@ -140,14 +163,27 @@
 	font-size: 24px;
 	color: $c-b41;
 	margin-bottom: 20px;
+	@media(max-width: 1200px){
+	  font-family: CodeProLC;
+	  font-size: 20px;
+	  line-height: 24px;
+	}
 	&_big{
+	  font-family: CodeProBoldLC;
 	  font-size: 50px;
 	  color: $white;
 	  position: absolute;
 	  bottom: 45px;
 	  left:	50px;
+	  right: 20px;
 	  margin-bottom: 0;
 	  text-shadow: 0 0 10px rgba(0,0,0,.5);
+	  @media(max-width: 1200px){
+		font-size: 30px;
+		line-height: 35px;
+		bottom: 20px;
+		left: 20px;
+	  }
 	}
   }
   &__text{
@@ -158,6 +194,10 @@
 	&_big{
 	  padding: 20px 50px;
 	  max-height: 132px;
+	  @media(max-width: 1200px){
+		padding-right: 20px;
+		padding-left: 20px;
+	  }
 	}
   }
   &__date{
@@ -184,6 +224,9 @@
 .index-b3{
   margin-bottom: 130px;
   overflow: hidden;
+  @media(max-width: 1200px){
+	margin-bottom: 80px;
+  }
 }
 .about-us{
   &__item{
@@ -205,10 +248,21 @@
 	  height: 100%;
 	  background-color: rgba(0,0,0,0.2);
 	}
+	@media(max-width: 1530px){
+	  font-size: 0.8em;
+	}
+	@media(max-width: 1200px){
+	  height: 600px;
+	  padding-top: 150px;
+	}
   }
   &__inner{
 	width: 500px;
 	margin: 0 auto;
+	position: relative;
+	@media(max-width: 1530px){
+	  width: 90%;
+	}
   }
   &__ttl{
 	font-size: 2.650em;
@@ -233,9 +287,15 @@
 	}
 	&:before{
 	  margin-bottom: 80px;
+	  @media(max-width: 1200px){
+		margin-bottom: 30px;
+	  }
 	}
 	&:after{
 	  margin-top: 80px;
+	  @media(max-width: 1200px){
+		margin-top: 30px;
+	  }
 	}
   }
   &__text-inner{
@@ -274,9 +334,17 @@
   padding-top: 125px;
   padding-bottom: 80px;
   background-color: $c-f5;
+  overflow: hidden;
+  @media(max-width: 1200px){
+	padding-top: 50px;
+	padding-bottom: 30px;
+  }
 }
 .we-wrapper{
   padding-top: 80px;
+  @media(max-width: 1200px){
+	padding-top: 10px;
+  }
 }
 .we{
   /*display: flex;
@@ -293,6 +361,9 @@
 	box-sizing: border-box;
 	text-align: center;
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
 	/*&:nth-child(2){
 	  transition-delay: .4s;
@@ -300,6 +371,9 @@
 	&:nth-child(3){
 	  transition-delay: .6s;
 	}*/
+	@media(max-width: 1200px){
+	  height: 200px;
+	}
   }
   &__img{
 	@include bg-img(contain);
@@ -320,17 +394,29 @@
 	  animation-delay: .4s;
 	}
   }
+  @media(max-width: 1200px){
+	margin-top: 30px;
+  }
+
 }
 .we-img{
   @include bg-img(cover);
   height: 840px;
   width: 100%;
+  @media(max-width: 1200px){
+	height: 600px;
+  }
 }
 
 .index-b7{
   background-color: $c-f5;
   padding-top: 80px;
   padding-bottom: 100px;
+  overflow: hidden;
+  @media(max-width: 1200px){
+	padding-top: 50px;
+	padding-bottom: 50px;
+  }
 }
 .partners{
   max-width: 1400px;
@@ -354,6 +440,11 @@
 .index-b6{
   padding-top: 150px;
   padding-bottom: 150px;
+  overflow: hidden;
+  @media(max-width: 1200px){
+	padding-top: 50px;
+	padding-bottom: 30px;
+  }
 }
 .index-swiper{
   overflow: hidden;
@@ -527,15 +618,22 @@
 .con-main{
   max-width: 1680px;
   margin: 0 auto 120px;
+  @media(max-width: 1630px){
+	font-size: 0.8em;
+  }
 }
 .con-all{
   max-width: 1680px;
   margin: 0 auto ;
+
   &__item{
 	margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 	padding: 50px;
+  }
+  @media(max-width: 1630px){
+	font-size: 0.8em;
   }
 }
 .white-pers{
